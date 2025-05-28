@@ -150,13 +150,13 @@ export default function App() {
               bullets={[]}
             >
               <div className="grid grid-cols-2 text-sm text-gray-300 gap-y-1 pl-1">
-                <div>Diamond DA42</div>
+                <div> Diamond DA42</div>
                 <div>50 год 18 хв</div>
           
-                <div>Tecnam P2002-JF</div>
+                <div>  Tecnam P2002-JF</div>
                 <div>1 год 00 хв</div>
           
-                <div>Aquila AT01</div>
+                <div>   Aquila AT01</div>
                 <div>66 год 30 хв</div>
           
                 <div>НАРП-1</div>
