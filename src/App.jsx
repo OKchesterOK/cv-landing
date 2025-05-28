@@ -144,8 +144,33 @@ export default function App() {
               'Свідоцтво комерційного пілота (CPL): СА №012698 (08.08.2013)',
               'Свідоцтво приватного пілота (PPL): РА №011521 (02.02.2012)'
             ]} />
+
+            <ListItem
+              title="Наліт та типи ПС"
+              bullets={[]}
+            >
+              <div className="grid grid-cols-2 text-sm text-gray-300 gap-y-1 pl-1">
+                <div className="font-medium text-yellow-100">Diamond DA42</div>
+                <div>50 год 18 хв</div>
+          
+                <div className="font-medium text-yellow-100">Tecnam P2002-JF</div>
+                <div>1 год 00 хв</div>
+          
+                <div className="font-medium text-yellow-100">Aquila AT01</div>
+                <div>66 год 30 хв</div>
+          
+                <div className="font-medium text-yellow-100">НАРП-1</div>
+                <div>40 год 03 хв</div>
+          
+                <div className="font-medium text-yellow-100">Л-410 (тренажер)</div>
+                <div>25 год 00 хв</div>
+          
+                <div className="font-medium text-yellow-100">АН-2 (тренажер)</div>
+                <div>30 год 00 хв</div>
+              </div>
+            </ListItem>
             
-            <ListItem 
+{/*             <ListItem 
               title="Загальний наліт" 
               subtitle="168 год 03 хв"
               bullets={[
@@ -169,7 +194,7 @@ export default function App() {
               bullets={[
               'Л-410 (25 год)',
               'АН-2 (30 год)'
-            ]} />
+            ]} /> */}
             
             <ListItem 
               title="Сертифікати" 
