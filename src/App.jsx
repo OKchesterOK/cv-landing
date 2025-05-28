@@ -145,7 +145,7 @@ export default function App() {
               'Свідоцтво приватного пілота (PPL): РА №011521 (02.02.2012)'
             ]} />
             
-            <ListItem title="Наліт та типи ПС">
+{/*             <ListItem title="Наліт та типи ПС">
               <span className="text-sm italic text-gray-400 mt-1">
                   Льотна підготовка, загальний наліт <span className="text-white font-semibold">160 год 35 хв</span>
               </span>
@@ -162,11 +162,11 @@ export default function App() {
                 <li>Л-410 — 25 год 00 хв</li>
                 <li>АН-2 — 30 год 00 хв</li>
               </ul>
-            </ListItem>
+            </ListItem> */}
 
             <ListItem title="Наліт та типи ПС">
               <span className="text-sm italic text-gray-400 mt-1">
-                  Льотна підготовка, загальний наліт <span className="text-white font-semibold">160 год 35 хв</span>
+                  Льотна підготовка, загальний наліт <span className="font-semibold">160 год 35 хв</span>
               </span>
               <div className="text-sm text-gray-300">
                 <div className="flex gap-6">
@@ -185,7 +185,7 @@ export default function App() {
                 </div>
               </div>
               <span className="text-sm italic text-gray-400 mt-1">
-                  Тренажерна підготовка, загальний наліт <span className="text-white font-semibold">55 год 00 хв</span>
+                  Тренажерна підготовка, загальний наліт <span className="font-semibold">55 год 00 хв</span>
               </span>
               <div className="text-sm text-gray-300">
                 <div className="flex gap-6">
@@ -201,12 +201,12 @@ export default function App() {
               </div>
             </ListItem>
             
-            <ListItem 
+{/*             <ListItem 
               title="Сертифікати" 
               bullets={[
               'Ведення радіомовлення англійською мовою',
               'Авіахімроботи'
-            ]} />
+            ]} /> */}
             
           </Section>
         </section>
