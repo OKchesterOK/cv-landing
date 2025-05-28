@@ -17,13 +17,13 @@ export default function App() {
           </Section>
 
           <Section title="НАВИЧКИ">
-            <Skill label="Управління проєктами та задачами" level={5} />
-            <Skill label="Кросфункціональна комунікація" level={5} />
+            <Skill label="Управління проєктами та задачами" />
+            <Skill label="Кросфункціональна комунікація" />
             <Skill label="Увага до деталей" level={4} />
-            <Skill label="Оптимізація процесів та автоматизація" level={4} />
-            <Skill label="Аналітичне мислення" level={3} />
-            <Skill label="Самоорганізація та мультизадачність" level={1} />
-            <Skill label="Гнучкість в умовах швидких змін" level={2} />
+            <Skill label="Оптимізація процесів та автоматизація" />
+            <Skill label="Аналітичне мислення" />
+            <Skill label="Самоорганізація та мультизадачність" />
+            <Skill label="Гнучкість в умовах швидких змін" />
           </Section>
 
           <Section title="МОВИ">
