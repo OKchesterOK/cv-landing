@@ -56,17 +56,20 @@ export default function App() {
               subtitle="Playcus, м. Київ" 
               date="сер 2021 – теперішній час"
               bullets={[
-              'Ведення понад 11 ігрових проєктів (Google Play, Apple Store, Microsoft Store, Amazon)',
-              'Напрями: Coloring, Hypercasual, Bingo',
-              'Unity, Firebase, AppsFlyer, GameAnalytics',
-              'A/B тестування, релізи'
+              'Ведення понад 11 ігрових проєктів на різних платформах (Google Play, Apple Store, Microsoft Store, Amazon)',
+              'Жанри ігор: Coloring, Hypercasual',
+              'Робота з Firebase, AppsFlyer, AppLovin, GameAnalytics, Unity',
+              'Планування релізів, управління командою',
+              'A/B тестування, підготовка релізів і їх відправка'
             ]} />
             <ListItem title="Manual QA Engineer" 
               subtitle="Playcus, м. Київ" 
               date="тра 2019 – сер 2021"
               bullets={[
               'Тестування ігор для мультиплатформ',
-              'Тест-кейси, баг-трекинг'
+              'Жанри ігор: Coloring, Hypercasual, Bingo',
+              'Тест-кейси, баг-репортінг, чек-листи',
+              'Підтримка гравців'
             ]} />
             <ListItem 
               title="Junior Front-End Developer" 
