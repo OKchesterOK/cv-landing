@@ -184,9 +184,9 @@ function Section({ title, children, noLine = false }) {
 
 function Info({ icon, value }) {
   return (
-    <div className="flex items-center gap-2 mb-1">
-      {icon}
-      <p className="text-sm text-gray-300">{value}</p>
+    <div className="flex items-start gap-3 mb-2">
+      <div className="pt-0.5">{icon}</div>
+      <p className="text-sm text-gray-300 leading-snug">{value}</p>
     </div>
   );
 }
