@@ -163,6 +163,19 @@ export default function App() {
                 <li>АН-2 — 30 год 00 хв</li>
               </ul>
             </ListItem>
+
+            <ListItem title="Наліт та типи ПС">
+              <div className="text-sm text-gray-300 space-y-1 pl-6">
+                <div className="flex justify-between"><span>Diamond DA42</span><span>50 год 18 хв</span></div>
+                <div className="flex justify-between"><span>Tecnam P2002-JF</span><span>40 год 00 хв</span></div>
+                <div className="flex justify-between"><span>Aquila AT01</span><span>27 год 45 хв</span></div>
+                <div className="flex justify-between"><span>Aeroprakt A-22</span><span>20 год 00 хв</span></div>
+                <div className="flex justify-between"><span>НАРП-1</span><span>30 хв</span></div>
+                <div className="pt-2 italic text-gray-400">Тренажерна підготовка</div>
+                <div className="flex justify-between"><span>Л-410 (тренажер)</span><span>25 год</span></div>
+                <div className="flex justify-between"><span>АН-2 (тренажер)</span><span>30 год</span></div>
+              </div>
+            </ListItem>
             
             <ListItem 
               title="Сертифікати" 
