@@ -37,6 +37,8 @@ export default function App() {
               <p className="text-2xl text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
             </div>
           </Section>
+
+          <Section></Section>
           
           <Section title="МЕТА">
             <p className="text-sm text-gray-300">
