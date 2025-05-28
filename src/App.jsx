@@ -168,7 +168,7 @@ export default function App() {
               <span className="text-sm italic text-gray-400 mt-1">
                   Льотна підготовка, загальний наліт <span className="text-white font-semibold">160 год 35 хв</span>
               </span>
-              <div className="text-sm text-gray-300 pl-6">
+              <div className="text-sm text-gray-300">
                 <div className="flex gap-6">
                   <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
                     <li>Diamond DA42</li>
