@@ -17,10 +17,13 @@ export default function App() {
           </Section>
 
           <Section title="НАВИЧКИ">
-            <Skill label="Організація роботи команд" level={5} />
-            <Skill label="Управління проєктами" level={5} />
-            <Skill label="Технічні знання" level={4} />
-            <Skill label="Аналітика" level={4} />
+            <Skill label="Управління проєктами та задачами" level={5} />
+            <Skill label="Кросфункціональна комунікація" level={5} />
+            <Skill label="Увага до деталей" level={4} />
+            <Skill label="Оптимізація процесів та автоматизація" level={4} />
+            <Skill label="Аналітичне мислення" level={3} />
+            <Skill label="Самоорганізація та мультизадачність" level={1} />
+            <Skill label="Гнучкість в умовах швидких змін" level={2} />
           </Section>
 
           <Section title="МОВИ">
@@ -57,27 +60,33 @@ export default function App() {
               subtitle="Playcus, м. Київ" 
               date="сер 2021 – теперішній час"
               bullets={[
-              'Ведення понад 11 ігрових проєктів на різних платформах (Google Play, Apple Store, Microsoft Store, Amazon)',
-              'Жанри ігор: Coloring, Hypercasual',
-              'Робота з Firebase, AppsFlyer, AppLovin, GameAnalytics, Unity',
-              'Планування релізів, управління командою',
-              'A/B тестування, підготовка релізів і їх відправка'
+              'Ведення 11+ мобільних ігрових проєктів на платформах: App Store, Google Play, Amazon, Microsoft Store',
+              'Заведення та публікація застосунків: метадані, підписки, IAP, тощо',
+              'Налаштування LiveOps: Firebase Remote Config, A/B тести, промо',
+              'Управління контентом: пошук, обробка, заливка на CDN, перевірка в грі',
+              'Робота з аналітикою: Firebase, AppsFlyer, GameAnalytics, devtodev (воронки, події, креші)',
+              'Ведення бордів Asana: планування релізів, автоматизації, контроль задач команди',
+              'Аналіз конкурентів: UI/UX-ресерч, адаптація фіч у Miro'
             ]} />
             <ListItem title="Manual QA Engineer" 
               subtitle="Playcus, м. Київ" 
               date="тра 2019 – сер 2021"
               bullets={[
-              'Тестування ігор для мультиплатформ',
-              'Жанри ігор: Coloring, Hypercasual, Bingo',
-              'Тест-кейси, баг-репортінг, чек-листи',
-              'Підтримка гравців'
+              'Тестування мобільних ігор на iOS, Android, Windows, Amazon, macOS',
+              'Створення тест-кейсів, чек-листів, репортинг, перевірка фіч',
+              'Підтримка гравців (HelpScout), перевірка звернень',
+              'Участь у прийманні контенту, A/B тестів, реліз-кандидатів'
             ]} />
             <ListItem 
               title="Junior Front-End Developer" 
               subtitle="Edgica, м. Київ" 
               date="тра 2017 – жов 2017"
-              bullets={['HTML, CSS, JS, адаптивна верстка']} 
-            />
+              bullets={[
+                'Участь у верстці вебсторінок за макетами (HTML5, CSS3, адаптивна розмітка)',
+                'Базова інтеграція JavaScript-скриптів, робота з формами та простою логікою',
+                'Тестування кросбраузерної сумісності, оптимізація для мобільних пристроїв',
+                'Робота в команді з дизайнером та бекенд-розробником'
+              ]} />
             <ListItem 
               title="Бар-менеджер / Бармен (фриланс)" 
               subtitle="м. Київ" 
@@ -200,45 +209,6 @@ export default function App() {
                 </div>
               </div>
             </ListItem>
-
-            <ListItem title="Наліт та типи ПС">
-              <span className="text-sm italic text-gray-400 mb-1 block">
-                Льотна підготовка, загальний наліт <span className="font-semibold text-white">160 год 35 хв</span>
-              </span>
-              <div className="text-sm text-gray-300">
-                <div className="flex gap-6">
-                  <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
-                    <li>Diamond DA42</li>
-                    <li>Tecnam P2002-JF</li>
-                    <li>Aquila AT01</li>
-                    <li>НАРП-1</li>
-                  </ul>
-                  <ul className="space-y-1 pl-[1.15rem]">
-                    <li>50 год 18 хв</li>
-                    <li>1 год 00 хв</li>
-                    <li>66 год 30 хв</li>
-                    <li>40 год 03 хв</li>
-                  </ul>
-                </div>
-              </div>
-            
-              <span className="text-sm italic text-gray-400 mt-0.5 block">
-                Тренажерна підготовка, загальний наліт <span className="font-semibold text-white">55 год 00 хв</span>
-              </span>
-              <div className="text-sm text-gray-300">
-                <div className="flex gap-6">
-                  <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
-                    <li>Л-410</li>
-                    <li>АН-2</li>
-                  </ul>
-                  <ul className="space-y-1 pl-[1.15rem]">
-                    <li>25 год 00 хв</li>
-                    <li>30 год 00 хв</li>
-                  </ul>
-                </div>
-              </div>
-            </ListItem>
-
             
 {/*             <ListItem 
               title="Сертифікати" 
