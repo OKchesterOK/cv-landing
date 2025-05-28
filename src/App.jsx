@@ -69,7 +69,7 @@ export default function App() {
             <ListItem title="Національний авіаційний університет, м. Київ" subtitle="2006–2010 (без диплому)" bullets={[
               'Навчання за напрямом авіаційних технологій'
             ]} />
-            <ListItem title="Ліцей "Універсум" при КПІ, м. Київ" subtitle="2004–2006" bullets={[
+            <ListItem title="Ліцей «Універсум» при КПІ, м. Київ" subtitle="2004–2006" bullets={[
               'Профіль: фізико-математичний'
             ]} />
           </Section>
