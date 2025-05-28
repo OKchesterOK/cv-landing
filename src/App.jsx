@@ -47,76 +47,112 @@ export default function App() {
           </Section>
           
           <Section title="ДОСВІД РОБОТИ">
-            <ListItem title="Project Manager" subtitle="Playcus, м. Київ — серпень 2021 – теперішній час" bullets={[
+            <ListItem title="Project Manager" 
+              subtitle="Playcus, м. Київ" 
+              date="сер 2021 – теперішній час"
+              bullets={[
               'Ведення понад 11 ігрових проєктів (Google Play, Apple Store, Microsoft Store, Amazon)',
               'Напрями: Coloring, Hypercasual, Bingo',
               'Unity, Firebase, AppsFlyer, GameAnalytics',
               'A/B тестування, релізи'
             ]} />
-            <ListItem title="Manual QA Engineer" subtitle="Playcus, м. Київ — травень 2019 – серпень 2021" bullets={[
+            <ListItem title="Manual QA Engineer" 
+              subtitle="Playcus, м. Київ" 
+              date="тра 2019 – сер 2021"
+              bullets={[
               'Тестування ігор для мультиплатформ',
               'Тест-кейси, баг-трекинг'
             ]} />
-            <ListItem title="Junior Front-End Developer" subtitle="Edgica, м. Київ — травень 2017 – жовтень 2017" bullets={['HTML, CSS, JS, адаптивна верстка']} />
-            <ListItem title="Бар-менеджер / Бармен (фриланс)" subtitle="м. Київ — 2014 – теперішній час (епізодично)" bullets={[]} />
+            <ListItem 
+              title="Junior Front-End Developer" 
+              subtitle="Edgica, м. Київ" 
+              date="тра 2017 – жов 2017"
+              bullets={['HTML, CSS, JS, адаптивна верстка']} 
+            />
+            <ListItem 
+              title="Бар-менеджер / Бармен (фриланс)" 
+              subtitle="м. Київ" 
+              date="2014 – теперішній час (епізодично)"
+              bullets={[]} 
+            />
           </Section>
 
           <Section title="ОСВІТА І КВАЛІФІКАЦІЇ">
             <ListItem 
               title="Магістр з льотної експлуатації повітряних суден" 
               subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький"
-              date=" вер 2013 — чер 2014"
+              date="вер 2013 — чер 2014"
               bullets={[
               'Спеціальність: Льотна експлуатація повітряних суден',
               'Професійна кваліфікація: Пілот (літака)'
             ]} />
-            <ListItem title="Молодший лейтенант" subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький (вер 2011 — чер 2013)" bullets={[
+            <ListItem 
+              title="Молодший лейтенант" 
+              subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький" 
+              date="вер 2011 — чер 2013"
+              bullets={[
               'Спеціальність: Пілот військово-транспортної авіації',
               'ВОС 061400: Бойове застосування авіаційних військових частин і підрозділів військово-транспортної авіації'
             ]} />
-            <ListItem title="Бакалавр з аеронавігації" subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький (вер 2010 — чер 2013)" bullets={[
+            <ListItem 
+              title="Бакалавр з аеронавігації" 
+              subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький" 
+              date="вер 2010 — чер 2013"
+              bullets={[
               'Спеціальність: Аеронавігація'
             ]} />
-            <ListItem title="Бакалавр з електроніки" subtitle="Національний авіаційний університет, м. Київ (вер 2006 — чер 2010)" bullets={[
+            <ListItem 
+              title="Бакалавр з електроніки" 
+              subtitle="Національний авіаційний університет, м. Київ" 
+              date="вер 2006 — чер 2010"
+              bullets={[
               'Спеціальність: Обладнання повітряних суден (без диплому)'
             ]} />
-            <ListItem title="Повна середня освіта" subtitle="Ліцей «Універсум», м. Київ (вер 2002 — чер 2006)" bullets={[
+            <ListItem 
+              title="Повна середня освіта" 
+              subtitle="Ліцей «Універсум», м. Київ" 
+              date="вер 2002 — чер 2006"
+              bullets={[
               'Профіль: фізико-математичний'
             ]} />
           </Section>
 
           <Section title="АВІАЦІЙНИЙ ДОСВІД">
-            <ListItem title="Ліцензії" bullets={[
+            <ListItem 
+              title="Ліцензії" 
+              bullets={[
               'Свідотство комерційного пілота (CPL): СА №012698 (08.08.2013)',
               'Свідоцтво приватного пілота (PPL): РА №011521 (02.02.2012)'
             ]} />
-            <ListItem title="Загальний наліт" subtitle="168 год 03 хв" bullets={[
+            <ListItem 
+              title="Загальний наліт" 
+              subtitle="168 год 03 хв" 
+              bullets={[
               'Однодвигунний літак: 117 год 45 хв',
               'Багатодвигунний літак: 50 год 18 хв'
             ]} />
-            <ListItem title="Типи ПС" bullets={[
+            <ListItem 
+              title="Типи ПС" 
+              bullets={[
               'Diamond DA42',
               'Аеропракт А-22',
               'Tecnam P2002-JF',
               'Aquila AT01',
               'НАРП-1'
             ]} />
-            <ListItem title="Тренажерна підготовка" subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький" bullets={[
+            <ListItem 
+              title="Тренажерна підготовка" 
+              subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький" 
+              bullets={[
               'Л-410 (25 год)',
               'АН-2 (30 год)'
             ]} />
-            <ListItem title="Сертифікати" bullets={[
+            <ListItem 
+              title="Сертифікати" 
+              bullets={[
               'Ведення радіомовлення англійською мовою',
               'Авіахімроботи'
             ]} />
-          </Section>
-
-          <Section title="ДОДАТКОВО">
-            <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
-              <li>Готовність до навчання та адаптації</li>
-              <li>Вміння працювати як у технічних, так і креативних командах</li>
-              <li>Автоматизація будинку: Home Assistant, ESPHome, Node-RED</li>
-            </ul>
           </Section>
         </section>
       </div>
@@ -152,19 +188,6 @@ function Skill({ label, level }) {
   );
 }
 
-// function ListItem({ title, subtitle, bullets }) {
-//   return (
-//     <div className="mb-5">
-//       <p className="text-md text-yellow-100 font-semibold">{title}</p>
-//       <p className="text-sm italic text-gray-400 mb-1">{subtitle}</p>
-//       {bullets.length > 0 && (
-//         <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
-//           {bullets.map((b, i) => <li key={i}>{b}</li>)}
-//         </ul>
-//       )}
-//     </div>
-//   );
-// }
 function ListItem({ title, subtitle, date, bullets }) {
   return (
     <div className="mb-5">
