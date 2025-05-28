@@ -15,18 +15,8 @@ export default function App() {
             <Info icon={<Mail size={16} className="text-yellow-400" />} value="igor.ivanov.89@gmail.com" />
             <Info icon={<Linkedin size={16} className="text-yellow-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">linkedin.com/in/chesterok</a>} />
           </Section>
-
-          <Section title="НАВИЧКИ">
-            <ListItem title="Управління проєктами та задачами" />
-            <ListItem title="Кросфункціональна комунікація" />
-            <ListItem title="Увага до деталей" />
-            <ListItem title="Оптимізація процесів та автоматизація" />
-            <ListItem title="Аналітичне мислення" />
-            <ListItem title="Самоорганізація та мультизадачність" />
-            <ListItem title="Гнучкість в умовах швидких змін" />
-          </Section>
           
-          <Section title="ХОББІ">
+          <Section title="НАВИЧКИ">
             <Skill label="Управління проєктами та задачами" />
             <Skill label="Кросфункціональна комунікація" />
             <Skill label="Увага до деталей" level={4} />
