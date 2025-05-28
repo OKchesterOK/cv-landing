@@ -2,67 +2,70 @@ import React from 'react';
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-[#0e1628] text-white px-6 py-12 font-sans">
-      <div className="max-w-5xl mx-auto grid md:grid-cols-3 gap-10">
-        <aside>
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold text-yellow-400 mb-2">ІВАНОВ ІГОР АНДРІЙОВИЧ</h2>
-            <p className="text-sm text-gray-400">Project Manager</p>
-            <p className="text-sm text-gray-400">Київ, Україна</p>
-            <p className="text-sm mt-2">📞 +38 (093) 168 20 38</p>
-            <p className="text-sm">📧 igor.ivanov.89@gmail.com</p>
+    <main className="min-h-screen bg-[#0c1220] text-white px-4 py-10 font-sans">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Left Panel */}
+        <aside className="bg-[#0f1a2f] p-6 rounded-xl shadow-md">
+          <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-lg w-full object-cover mb-6" />
+          <div className="text-center mb-6">
+            <h1 className="text-2xl font-bold text-yellow-400">IVANOV</h1>
+            <p className="text-md text-gray-300 tracking-widest">ANDRIIOVICH</p>
           </div>
 
-          <div className="mb-8">
-            <h3 className="text-lg font-semibold text-yellow-300">Навички</h3>
-            <ul className="list-disc pl-5 text-sm mt-2 text-gray-300 space-y-1">
-              <li>Управління командами, техдокументація</li>
-              <li>Asana, Wrike, Unity, Firebase, JSON</li>
-              <li>QA-процеси</li>
-              <li>AppLovin, GameAnalytics, AppsFlyer</li>
-              <li>HTML / CSS / JS — базово</li>
-            </ul>
-          </div>
+          <Section title="МЕТА">
+            <p className="text-sm text-gray-300">
+              Шукаю можливість долучитися до команди, що працює над технологічними або інженерними рішеннями,
+              важливими для країни. Прагну застосувати свій досвід в управлінні проєктами, технічній координації
+              та аналітиці. Готовий розвиватися, швидко навчатись і вкладати зусилля у нові напрями.
+            </p>
+          </Section>
 
-          <div className="mb-8">
-            <h3 className="text-lg font-semibold text-yellow-300">Мови</h3>
-            <p className="text-sm text-gray-300 mt-2">Українська — рідна</p>
-            <p className="text-sm text-gray-300">Англійська — Pre-Intermediate</p>
-          </div>
+          <Section title="ОСОБИСТІ ДАНІ">
+            <Info label="📍" value="Київ, Україна" />
+            <Info label="📞" value="+38 (093) 168 20 38" />
+            <Info label="✉️" value="igor.ivanov.89@gmail.com" />
+          </Section>
+
+          <Section title="НАВИЧКИ">
+            <Skill label="Організація роботи команд" level={5} />
+            <Skill label="Управління проєктами" level={5} />
+            <Skill label="Технічні знання" level={4} />
+            <Skill label="Аналітика" level={4} />
+          </Section>
+
+          <Section title="МОВИ">
+            <Skill label="Українська" level={5} />
+            <Skill label="Англійська" level={3} />
+          </Section>
         </aside>
 
+        {/* Right Panel */}
         <section className="md:col-span-2 space-y-10">
-          <div>
-            <h3 className="text-xl font-semibold text-yellow-300 mb-2">Мета</h3>
-            <p className="text-sm text-gray-300">
-              Шукаю можливість долучитися до команди, що працює над технологічними або інженерними рішеннями, важливими для країни.
-              Прагну застосувати свій досвід в управлінні проєктами, технічній координації та аналітиці.
-              Готовий розвиватися, швидко навчатись і вкладати зусилля у нові напрями.
-            </p>
-          </div>
+          <Section title="ДОСВІД РОБОТИ">
+            <ListItem title="Project Manager" subtitle="Playcus, м. Київ — серпень 2021 – теперішній час" bullets={[
+              'Ведення понад 11 ігрових проєктів (Google Play, Apple Store, Microsoft Store, Amazon)',
+              'Напрями: Coloring, Hypercasual, Bingo',
+              'Unity, Firebase, AppsFlyer, GameAnalytics',
+              'A/B тестування, релізи'
+            ]} />
+            <ListItem title="Manual QA Engineer" subtitle="Playcus, м. Київ — травень 2019 – серпень 2021" bullets={[
+              'Тестування ігор для мультиплатформ',
+              'Тест-кейси, баг-трекинг'
+            ]} />
+            <ListItem title="Junior Front-End Developer" subtitle="Edgica, м. Київ — травень 2017 – жовтень 2017" bullets={['HTML, CSS, JS, адаптивна верстка']} />
+            <ListItem title="Бар-менеджер / Бармен (фриланс)" subtitle="м. Київ — 2014 – теперішній час (епізодично)" bullets={[]} />
+          </Section>
 
-          <div>
-            <h3 className="text-xl font-semibold text-yellow-300 mb-2">Досвід роботи</h3>
-            <ul className="list-disc pl-5 text-sm text-gray-300 space-y-1">
-              <li><strong>Project Manager</strong>, Playcus (серпень 2021 – теперішній час)</li>
-              <li><strong>Manual QA Engineer</strong>, Playcus (травень 2019 – серпень 2021)</li>
-              <li><strong>Junior Front-End Developer</strong>, Edgica (травень 2017 – жовтень 2017)</li>
-              <li><strong>Бар-менеджер / Бармен</strong> (фриланс, 2014 – теперішній час, епізодично)</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 className="text-xl font-semibold text-yellow-300 mb-2">Освіта</h3>
-            <ul className="list-disc pl-5 text-sm text-gray-300 space-y-1">
+          <Section title="ОСВІТА">
+            <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
               <li>Державна льотна академія України — Магістр (2014), Бакалавр (2012)</li>
               <li>Національний авіаційний університет — 2006–2010 (без диплому)</li>
               <li>Ліцей "Універсум" при КПІ — 2006</li>
             </ul>
-          </div>
+          </Section>
 
-          <div>
-            <h3 className="text-xl font-semibold text-yellow-300 mb-2">Авіаційний досвід</h3>
-            <ul className="list-disc pl-5 text-sm text-gray-300 space-y-1">
+          <Section title="АВІАЦІЙНИЙ ДОСВІД">
+            <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
               <li>Свідоцтво комерційного пілота (СА №012698, 2013)</li>
               <li>Свідоцтво приватного пілота (РА №011521, 2012)</li>
               <li>Наліт: понад 165 годин</li>
@@ -70,18 +73,55 @@ export default function App() {
               <li>Тренажери: АН-2 (30 год), Л-410 (25 год)</li>
               <li>Молодший лейтенант запасу, ВОС 061400</li>
             </ul>
-          </div>
+          </Section>
 
-          <div>
-            <h3 className="text-xl font-semibold text-yellow-300 mb-2">Додатково</h3>
-            <ul className="list-disc pl-5 text-sm text-gray-300 space-y-1">
+          <Section title="ДОДАТКОВО">
+            <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
               <li>Готовність до навчання та адаптації</li>
               <li>Вміння працювати як у технічних, так і креативних командах</li>
-              <li>Розумний дім: Home Assistant, ESPHome, Node-RED</li>
+              <li>Автоматизація будинку: Home Assistant, ESPHome, Node-RED</li>
             </ul>
-          </div>
+          </Section>
         </section>
       </div>
     </main>
+  );
+}
+
+function Section({ title, children }) {
+  return (
+    <div className="mb-6">
+      <h2 className="text-xl font-semibold text-yellow-300 mb-2 border-b border-yellow-800 pb-1">{title}</h2>
+      {children}
+    </div>
+  );
+}
+
+function Info({ label, value }) {
+  return <p className="text-sm text-gray-300"><span className="mr-1">{label}</span>{value}</p>;
+}
+
+function Skill({ label, level }) {
+  return (
+    <div className="mb-1">
+      <p className="text-sm text-gray-300 mb-0.5">{label}</p>
+      <div className="h-1 bg-gray-700 rounded-full">
+        <div className={`h-1 bg-yellow-400 rounded-full`} style={{ width: `${level * 20}%` }}></div>
+      </div>
+    </div>
+  );
+}
+
+function ListItem({ title, subtitle, bullets }) {
+  return (
+    <div className="mb-5">
+      <p className="text-md text-yellow-100 font-semibold">{title}</p>
+      <p className="text-sm italic text-gray-400 mb-1">{subtitle}</p>
+      {bullets.length > 0 && (
+        <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
+          {bullets.map((b, i) => <li key={i}>{b}</li>)}
+        </ul>
+      )}
+    </div>
   );
 }
