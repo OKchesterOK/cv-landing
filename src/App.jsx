@@ -82,7 +82,7 @@ export default function App() {
           </Section>
 
           <Section title="АВІАЦІЙНИЙ ДОСВІД">
-            <ListItem title="Свідотство комерційного пілота (CPL)" subtitle="а СА №012698 (08.08.2013)" bullets={[
+            <ListItem title="Свідотство комерційного пілота (CPL)" subtitle="СА №012698 (08.08.2013)" bullets={[
             ]} />
             <ListItem title="Свідоцтво приватного пілота (PPL)" subtitle="РА №011521 (02.02.2012)" bullets={[
             ]} />
