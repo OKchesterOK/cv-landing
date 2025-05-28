@@ -144,57 +144,18 @@ export default function App() {
               'Свідоцтво комерційного пілота (CPL): СА №012698 (08.08.2013)',
               'Свідоцтво приватного пілота (PPL): РА №011521 (02.02.2012)'
             ]} />
-
-            <ListItem
-              title="Наліт та типи ПС"
-              bullets={[]}
-            >
-              <div className="grid grid-cols-[1fr_110px] text-sm text-gray-300 gap-y-1 pl-1">
-                <div>Diamond DA42</div>
-                <div>50 год 18 хв</div>
-          
-                <div>Tecnam P2002-JF</div>
-                <div>1 год 00 хв</div>
-          
-                <div>Aquila AT01</div>
-                <div>66 год 30 хв</div>
-          
-                <div>НАРП-1</div>
-                <div>40 год 03 хв</div>
-          
-                <div>Л-410 (тренажер)</div>
-                <div>25 год 00 хв</div>
-          
-                <div>АН-2 (тренажер)</div>
-                <div>30 год 00 хв</div>
-              </div>
-            </ListItem>
-            
-{/*             <ListItem 
-              title="Загальний наліт" 
-              subtitle="168 год 03 хв"
-              bullets={[
-              'Однодвигунний літак: 117 год 45 хв',
-              'Багатодвигунний літак: 50 год 18 хв'
-            ]} />
             
             <ListItem 
-              title="Типи ПС" 
-              bullets={[
-              'Diamond DA42',
-              'Аеропракт А-22',
-              'Tecnam P2002-JF',
-              'Aquila AT01',
-              'НАРП-1'
+              title="Наліт та типи ПС" 
+              subtitle="Загальний наліт: 168 год 03 хв"
+             bullets={[
+              'Diamond DA42 — 50 год 18 хв',
+              'Tecnam P2002-JF — 1 год 00 хв',
+              'Aquila AT01 — 66 год 30 хв',
+              'НАРП-1 — 40 год 03 хв',
+              'Л-410 (тренажер) — 25 год',
+              'АН-2 (тренажер) — 30 год'
             ]} />
-            
-            <ListItem 
-              title="Тренажерна підготовка" 
-              subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький" 
-              bullets={[
-              'Л-410 (25 год)',
-              'АН-2 (30 год)'
-            ]} /> */}
             
             <ListItem 
               title="Сертифікати" 
