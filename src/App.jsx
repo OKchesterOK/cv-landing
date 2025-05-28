@@ -147,11 +147,7 @@ export default function App() {
             
             <ListItem 
               title="Загальний наліт" 
-              subtitle={
-                <span className="italic text-yellow-300">
-                  168 год 03 хв
-                </span>
-              }
+              subtitle="168 год 03 хв"
               bullets={[
               'Однодвигунний літак: 117 год 45 хв',
               'Багатодвигунний літак: 50 год 18 хв'
