@@ -82,15 +82,29 @@ export default function App() {
           </Section>
 
           <Section title="АВІАЦІЙНИЙ ДОСВІД">
-            <ListItem title="Свідотство комерційного пілота (CPL)" subtitle="СА №012698 (08.08.2013)" bullets={[
+            <ListItem title="Ліцензії" bullets={[
+              'Свідотство комерційного пілота (CPL): СА №012698 (08.08.2013)'
+              'Свідоцтво приватного пілота (PPL): РА №011521 (02.02.2012)'
             ]} />
-            <ListItem title="Свідоцтво приватного пілота (PPL)" subtitle="РА №011521 (02.02.2012)" bullets={[
+            <ListItem title="Загальний наліт" subtitle="168 год 03 хв" bullets={[
+              'Однодвигунний літак: 117 год 45 хв'
+              'Багатодвигунний літак: 50 год 18 хв'
             ]} />
-            <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
-              <li>Наліт: понад 165 годин</li>
-              <li>Типи ПС: NARP-1, Aquila AT01, Tecnam P2002-JF, Diamond DA42</li>
-              <li>Тренажери: АН-2 (30 год), Л-410 (25 год)</li>
-            </ul>
+            <ListItem title="Типи ПС" bullets={[
+              'Diamond DA42'
+              'Аеропракт А-22'
+              'Tecnam P2002-JF'
+              'Aquila AT01'
+              'НАРП-1'
+            ]} />
+            <ListItem title="Тренажерна підготовка" subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький" bullets={[
+              'Л-410 (25 год)'
+              'АН-2 (30 год)'
+            ]} />
+            <ListItem title="Сертифікати" bullets={[
+              'Ведення радіомовлення англійською мовою'
+              'Авіахімроботи'
+            ]} />
           </Section>
 
           <Section title="ДОДАТКОВО">
