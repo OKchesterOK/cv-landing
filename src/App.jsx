@@ -157,16 +157,21 @@ export default function App() {
               'АН-2 (тренажер) — 30 год'
             ]} /> */}
             <ListItem title="Наліт та типи ПС">
+              <span className="text-sm italic text-gray-400">
+                  Льотна підготовка
+              </span>
               <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
-                <li className="!list-none mt-2">
+{/*                 <li className="!list-none mt-2">
                   <span className="text-sm italic text-gray-400">
                     Льотна підготовка
                   </span>
-                </li>
+                </li> */}
                 <li>Diamond DA42 — 50 год 18 хв</li>
                 <li>Tecnam P2002-JF — 1 год 00 хв</li>
                 <li>Aquila AT01 — 66 год 30 хв</li>
                 <li>НАРП-1 — 40 год 03 хв</li>
+              </ul>
+               <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
                 <li className="!list-none">
                   <span className="text-sm italic text-gray-400">
                     Тренажерна підготовка
