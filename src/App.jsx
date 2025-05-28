@@ -62,11 +62,16 @@ export default function App() {
           </Section>
 
           <Section title="ОСВІТА">
-            <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
-              <li>Державна льотна академія України — Магістр (2014), Бакалавр (2012)</li>
-              <li>Національний авіаційний університет — 2006–2010 (без диплому)</li>
-              <li>Ліцей "Універсум" при КПІ — 2006</li>
-            </ul>
+            <ListItem title="Державна льотна академія України, м. Кропивницький" subtitle="2008–2014" bullets={[
+              'Спеціальність: Повітряна навігація',
+              'Кваліфікація: Магістр (2014), Бакалавр (2012)'
+            ]} />
+            <ListItem title="Національний авіаційний університет, м. Київ" subtitle="2006–2010 (без диплому)" bullets={[
+              'Навчання за напрямом авіаційних технологій'
+            ]} />
+            <ListItem title="Ліцей "Універсум" при КПІ, м. Київ" subtitle="2004–2006" bullets={[
+              'Профіль: фізико-математичний'
+            ]} />
           </Section>
 
           <Section title="АВІАЦІЙНИЙ ДОСВІД">
@@ -93,14 +98,6 @@ export default function App() {
   );
 }
 
-// function Section({ title, children }) {
-//   return (
-//     <div className="mb-6">
-//       <h2 className="text-xl font-semibold text-yellow-300 mb-2 border-b border-yellow-800 pb-1">{title}</h2>
-//       {children}
-//     </div>
-//   );
-// }
 function Section({ title, children, noLine = false }) {
   return (
     <div className="mb-6">
