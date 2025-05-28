@@ -9,7 +9,7 @@ export default function App() {
           <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-lg w-full object-cover mb-6" />
 
           <Section title="ОСОБИСТІ ДАНІ">
-            <Info label="📍" value="Київ, Україна" />
+            <Info label="📍 " value="Київ, Україна" />
             <Info label="📞" value="+38 (093) 168 20 38" />
             <Info label="✉️" value="igor.ivanov.89@gmail.com" />
             <Info label="🔗" value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">linkedin.com/in/chesterok</a>} />
