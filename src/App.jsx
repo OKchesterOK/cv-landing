@@ -30,11 +30,13 @@ export default function App() {
 
         {/* Right Panel */}
         <section className="md:col-span-2 space-y-10">
-          
-          <div className="text-left mb-6">
-            <h1 className="text-4xl font-bold text-yellow-400">ІВАНОВ</h1>
-            <p className="text-2xl text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
-          </div>
+
+          <Section>
+            <div className="text-left mb-6">
+              <h1 className="text-4xl font-bold text-yellow-400">ІВАНОВ</h1>
+              <p className="text-2xl text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
+            </div>
+          </Section>
           
           <Section title="МЕТА">
             <p className="text-sm text-gray-300">
