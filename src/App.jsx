@@ -165,40 +165,24 @@ export default function App() {
             </ListItem>
 
             <ListItem title="Наліт та типи ПС">
-              <div className="text-sm text-gray-300 space-y-1 pl-6">
-                <div className="flex justify-between"><span>Diamond DA42</span><span>50 год 18 хв</span></div>
-                <div className="flex justify-between"><span>Tecnam P2002-JF</span><span>40 год 00 хв</span></div>
-                <div className="flex justify-between"><span>Aquila AT01</span><span>27 год 45 хв</span></div>
-                <div className="flex justify-between"><span>Aeroprakt A-22</span><span>20 год 00 хв</span></div>
-                <div className="flex justify-between"><span>НАРП-1</span><span>30 хв</span></div>
-                <div className="pt-2 italic text-gray-400">Тренажерна підготовка</div>
-                <div className="flex justify-between"><span>Л-410 (тренажер)</span><span>25 год</span></div>
-                <div className="flex justify-between"><span>АН-2 (тренажер)</span><span>30 год</span></div>
-              </div>
-            </ListItem>
-
-            <ListItem title="Наліт та типи ПС">
+              <span className="text-sm italic text-gray-400 mt-1">
+                  Льотна підготовка, загальний наліт <span className="text-white font-semibold">160 год 35 хв</span>
+              </span>
               <div className="text-sm text-gray-300 pl-6">
                 <div className="flex gap-6">
-                  <ul className="space-y-1">
+                  <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
                     <li>Diamond DA42</li>
                     <li>Tecnam P2002-JF</li>
                     <li>Aquila AT01</li>
                     <li>Aeroprakt A-22</li>
                     <li>НАРП-1</li>
-                    <li className="pt-2 italic text-gray-400">Тренажерна підготовка</li>
-                    <li>Л-410 (тренажер)</li>
-                    <li>АН-2 (тренажер)</li>
                   </ul>
                   <ul className="space-y-1">
                     <li>50 год 18 хв</li>
-                    <li>40 год 00 хв</li>
+                    <li>1 год 00 хв</li>
                     <li>27 год 45 хв</li>
                     <li>20 год 00 хв</li>
                     <li>30 хв</li>
-                    <li className="pt-2"></li>
-                    <li>25 год</li>
-                    <li>30 год</li>
                   </ul>
                 </div>
               </div>
