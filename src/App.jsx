@@ -16,6 +16,7 @@ export default function App() {
             <Info label="📍" value="Київ, Україна" />
             <Info label="📞" value="+38 (093) 168 20 38" />
             <Info label="✉️" value="igor.ivanov.89@gmail.com" />
+            <Info label="🔗" value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">linkedin.com/in/chesterok</a>} />
           </Section>
 
           <Section title="НАВИЧКИ">
