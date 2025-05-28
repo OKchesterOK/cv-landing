@@ -200,6 +200,31 @@ export default function App() {
                 </div>
               </div>
             </ListItem>
+
+            <ListItem title="Наліт та типи ПС">
+              <div className="text-sm text-gray-300 pl-6">
+                <div className="grid grid-cols-2 gap-x-8">
+                  <ul className="space-y-1 tabular-nums whitespace-nowrap">
+                    <li>Diamond DA42</li>
+                    <li>Tecnam P2002-JF</li>
+                    <li>Aquila AT01</li>
+                    <li>НАРП-1</li>
+                    <li className="pt-2 italic text-gray-400">Тренажерна підготовка</li>
+                    <li>Л-410 (тренажер)</li>
+                    <li>АН-2 (тренажер)</li>
+                  </ul>
+                  <ul className="space-y-1 tabular-nums whitespace-nowrap">
+                    <li>66 год 30 хв</li>
+                    <li>1 год 00 хв</li>
+                    <li>50 год 18 хв</li>
+                    <li>40 год 03 хв</li>
+                    <li className="pt-2"></li>
+                    <li>25 год 00 хв</li>
+                    <li>30 год 00 хв</li>
+                  </ul>
+                </div>
+              </div>
+            </ListItem>
             
 {/*             <ListItem 
               title="Сертифікати" 
