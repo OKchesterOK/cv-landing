@@ -150,22 +150,22 @@ export default function App() {
               bullets={[]}
             >
               <div className="grid grid-cols-2 text-sm text-gray-300 gap-y-1 pl-1">
-                <div className="font-medium text-yellow-100">Diamond DA42</div>
+                <div>Diamond DA42</div>
                 <div>50 год 18 хв</div>
           
-                <div className="font-medium text-yellow-100">Tecnam P2002-JF</div>
+                <div>Tecnam P2002-JF</div>
                 <div>1 год 00 хв</div>
           
-                <div className="font-medium text-yellow-100">Aquila AT01</div>
+                <div>Aquila AT01</div>
                 <div>66 год 30 хв</div>
           
-                <div className="font-medium text-yellow-100">НАРП-1</div>
+                <div>НАРП-1</div>
                 <div>40 год 03 хв</div>
           
-                <div className="font-medium text-yellow-100">Л-410 (тренажер)</div>
+                <div>Л-410 (тренажер)</div>
                 <div>25 год 00 хв</div>
           
-                <div className="font-medium text-yellow-100">АН-2 (тренажер)</div>
+                <div>АН-2 (тренажер)</div>
                 <div>30 год 00 хв</div>
               </div>
             </ListItem>
