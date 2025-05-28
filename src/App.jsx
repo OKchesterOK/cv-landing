@@ -1,4 +1,5 @@
 import React from 'react';
+import { MapPin, Phone, Mail, Linkedin } from 'lucide-react';
 
 export default function App() {
   return (
@@ -9,10 +10,10 @@ export default function App() {
           <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-lg w-full object-cover mb-6" />
 
           <Section title="ОСОБИСТІ ДАНІ">
-            <Info label=" 📍 " value="Київ, Україна" />
-            <Info label="📞" value="+38 (093) 168 20 38" />
-            <Info label="✉️" value="igor.ivanov.89@gmail.com" />
-            <Info label="🔗" value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="text-blue-400 underline">linkedin.com/in/chesterok</a>} />
+            <Info icon={<MapPin size={16} className="text-yellow-400" />} value="Київ, Україна" />
+            <Info icon={<Phone size={16} className="text-yellow-400" />} value="+38 (093) 168 20 38" />
+            <Info icon={<Mail size={16} className="text-yellow-400" />} value="igor.ivanov.89@gmail.com" />
+            <Info icon={<Linkedin size={16} className="text-yellow-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">linkedin.com/in/chesterok</a>} />
           </Section>
 
           <Section title="НАВИЧКИ">
@@ -181,8 +182,13 @@ function Section({ title, children, noLine = false }) {
   );
 }
 
-function Info({ label, value }) {
-  return <p className="text-sm text-gray-300"><span className="mr-1">{label}</span>{value}</p>;
+function Info({ icon, value }) {
+  return (
+    <div className="flex items-center gap-2 mb-1">
+      {icon}
+      <p className="text-sm text-gray-300">{value}</p>
+    </div>
+  );
 }
 
 function Skill({ label, level }) {
