@@ -157,7 +157,7 @@ export default function App() {
               'АН-2 (тренажер) — 30 год'
             ]} /> */}
             <ListItem title="Наліт та типи ПС">
-              <span className="text-sm italic text-gray-400">
+              <span className="text-sm italic text-gray-400 mt-2">
                   Льотна підготовка
               </span>
               <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
