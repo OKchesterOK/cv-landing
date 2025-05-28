@@ -149,7 +149,7 @@ export default function App() {
               title="Наліт та типи ПС"
               bullets={[]}
             >
-              <div className="grid grid-cols-2 text-sm text-gray-300 gap-y-1 pl-1">
+              <div className="grid grid-cols-[220px_1fr] text-sm text-gray-300 gap-y-1 pl-1">
                 <div>Diamond DA42</div>
                 <div>50 год 18 хв</div>
           
