@@ -31,14 +31,12 @@ export default function App() {
         {/* Right Panel */}
         <section className="md:col-span-2 space-y-10">
 
-          <Section>
+          <Section noLine>
             <div className="text-left mb-6">
               <h1 className="text-4xl font-bold text-yellow-400">ІВАНОВ</h1>
               <p className="text-2xl text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
             </div>
           </Section>
-
-          <Section></Section>
           
           <Section title="МЕТА">
             <p className="text-sm text-gray-300">
@@ -95,10 +93,22 @@ export default function App() {
   );
 }
 
-function Section({ title, children }) {
+// function Section({ title, children }) {
+//   return (
+//     <div className="mb-6">
+//       <h2 className="text-xl font-semibold text-yellow-300 mb-2 border-b border-yellow-800 pb-1">{title}</h2>
+//       {children}
+//     </div>
+//   );
+// }
+function Section({ title, children, noLine = false }) {
   return (
     <div className="mb-6">
-      <h2 className="text-xl font-semibold text-yellow-300 mb-2 border-b border-yellow-800 pb-1">{title}</h2>
+      <h2
+        className={`text-xl font-semibold text-yellow-300 mb-2 ${noLine ? '' : 'border-b border-yellow-800 pb-1'}`}
+      >
+        {title}
+      </h2>
       {children}
     </div>
   );
