@@ -62,7 +62,11 @@ export default function App() {
           </Section>
 
           <Section title="ОСВІТА І КВАЛІФІКАЦІЇ">
-            <ListItem title="Магістр з льотної експлуатації повітряних суден" subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький (вер 2013 — чер 2014)" bullets={[
+            <ListItem 
+              title="Магістр з льотної експлуатації повітряних суден" 
+              subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький"
+              date=" вер 2013 — чер 2014"
+              bullets={[
               'Спеціальність: Льотна експлуатація повітряних суден',
               'Професійна кваліфікація: Пілот (літака)'
             ]} />
@@ -148,12 +152,32 @@ function Skill({ label, level }) {
   );
 }
 
-function ListItem({ title, subtitle, bullets }) {
+// function ListItem({ title, subtitle, bullets }) {
+//   return (
+//     <div className="mb-5">
+//       <p className="text-md text-yellow-100 font-semibold">{title}</p>
+//       <p className="text-sm italic text-gray-400 mb-1">{subtitle}</p>
+//       {bullets.length > 0 && (
+//         <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
+//           {bullets.map((b, i) => <li key={i}>{b}</li>)}
+//         </ul>
+//       )}
+//     </div>
+//   );
+// }
+function ListItem({ title, subtitle, date, bullets }) {
   return (
     <div className="mb-5">
-      <p className="text-md text-yellow-100 font-semibold">{title}</p>
-      <p className="text-sm italic text-gray-400 mb-1">{subtitle}</p>
-      {bullets.length > 0 && (
+      <div className="flex justify-between items-start gap-4">
+        <p className="text-md text-yellow-100 font-semibold">{title}</p>
+        {date && (
+          <p className="text-sm italic text-gray-400 whitespace-nowrap">{date}</p>
+        )}
+      </div>
+      {subtitle && (
+        <p className="text-sm italic text-gray-400 mb-1">{subtitle}</p>
+      )}
+      {bullets?.length > 0 && (
         <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
           {bullets.map((b, i) => <li key={i}>{b}</li>)}
         </ul>
