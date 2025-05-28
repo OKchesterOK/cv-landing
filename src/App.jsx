@@ -165,7 +165,7 @@ export default function App() {
             </ListItem> */}
 
             <ListItem title="Наліт та типи ПС">
-              <span className="text-sm italic text-gray-400 mt-1">
+              <span className="text-sm italic text-gray-400 mb-1">
                   Льотна підготовка, загальний наліт <span className="font-semibold">160 год 35 хв</span>
               </span>
               <div className="text-sm text-gray-300">
