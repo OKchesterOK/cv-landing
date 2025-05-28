@@ -17,6 +17,16 @@ export default function App() {
           </Section>
 
           <Section title="НАВИЧКИ">
+            <ListItem title="Управління проєктами та задачами" />
+            <ListItem title="Кросфункціональна комунікація" />
+            <ListItem title="Увага до деталей" />
+            <ListItem title="Оптимізація процесів та автоматизація" />
+            <ListItem title="Аналітичне мислення" />
+            <ListItem title="Самоорганізація та мультизадачність" />
+            <ListItem title="Гнучкість в умовах швидких змін" />
+          </Section>
+          
+          <Section title="ХОББІ">
             <Skill label="Управління проєктами та задачами" />
             <Skill label="Кросфункціональна комунікація" />
             <Skill label="Увага до деталей" level={4} />
