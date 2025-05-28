@@ -9,7 +9,7 @@ export default function App() {
           <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-lg w-full object-cover mb-6" />
           <div className="text-center mb-6">
             <h1 className="text-2xl font-bold text-yellow-400">ІВАНОВ</h1>
-            <p className="text-md text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
+            <p className="text-md text-yellow-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
           </div>
 
           <Section title="ОСОБИСТІ ДАНІ">
