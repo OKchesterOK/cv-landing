@@ -200,6 +200,45 @@ export default function App() {
                 </div>
               </div>
             </ListItem>
+
+            <ListItem title="Наліт та типи ПС">
+              <span className="text-sm italic text-gray-400 mb-1 block">
+                Льотна підготовка, загальний наліт <span className="font-semibold text-white">160 год 35 хв</span>
+              </span>
+              <div className="text-sm text-gray-300">
+                <div className="flex gap-6">
+                  <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
+                    <li>Diamond DA42</li>
+                    <li>Tecnam P2002-JF</li>
+                    <li>Aquila AT01</li>
+                    <li>НАРП-1</li>
+                  </ul>
+                  <ul className="space-y-1 pl-[1.15rem]">
+                    <li>50 год 18 хв</li>
+                    <li>1 год 00 хв</li>
+                    <li>66 год 30 хв</li>
+                    <li>40 год 03 хв</li>
+                  </ul>
+                </div>
+              </div>
+            
+              <span className="text-sm italic text-gray-400 mt-0.5 block">
+                Тренажерна підготовка, загальний наліт <span className="font-semibold text-white">55 год 00 хв</span>
+              </span>
+              <div className="text-sm text-gray-300">
+                <div className="flex gap-6">
+                  <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
+                    <li>Л-410</li>
+                    <li>АН-2</li>
+                  </ul>
+                  <ul className="space-y-1 pl-[1.15rem]">
+                    <li>25 год 00 хв</li>
+                    <li>30 год 00 хв</li>
+                  </ul>
+                </div>
+              </div>
+            </ListItem>
+
             
 {/*             <ListItem 
               title="Сертифікати" 
