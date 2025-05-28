@@ -1,12 +1,12 @@
 import React from 'react';
 
-function App() {
+const App = () => {
   return (
     <main>
       <h1>Ігор Іванов — Project Manager</h1>
-      <p>Цей сайт у процесі розробки. Скоро тут буде професійний лендінг.</p>
+      <p>Цей сайт перебуває у розробці. Скоро тут буде повноцінне професійне резюме.</p>
     </main>
   );
-}
+};
 
 export default App;
