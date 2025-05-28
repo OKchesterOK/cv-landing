@@ -31,8 +31,8 @@ export default function App() {
         {/* Right Panel */}
         <section className="md:col-span-2 space-y-10">
           <div className="text-left mb-6">
-            <h1 className="text-2xl font-bold text-yellow-600">ІВАНОВ</h1>
-            <p className="text-md text-gray-500 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
+            <h1 className="text-2xl font-bold text-yellow-400">ІВАНОВ</h1>
+            <p className="text-md text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
           </div>
           
           <Section title="МЕТА">
