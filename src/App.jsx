@@ -243,7 +243,7 @@ function Skill({ label, level }) {
   );
 }
 
-function ListItem({ title, subtitle, date, bullets }) {
+function ListItem({ title, subtitle, date, bullets, children }) {
   return (
     <div className="mb-5">
       <div className="flex justify-between items-start gap-4">
@@ -260,6 +260,7 @@ function ListItem({ title, subtitle, date, bullets }) {
           {bullets.map((b, i) => <li key={i}>{b}</li>)}
         </ul>
       )}
+      {children}
     </div>
   );
 }
