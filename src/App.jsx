@@ -16,7 +16,14 @@ export default function App() {
           
           <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-lg w-full object-cover mb-6" />
 
-          <Section>
+          <Section title="ОСОБИСТІ ДАНІ">
+            <Info icon={<MapPin size={16} className="text-yellow-400" />} value="Київ, Україна" />
+            <Info icon={<Phone size={16} className="text-yellow-400" />} value="+38 (093) 168 20 38" />
+            <Info icon={<Mail size={16} className="text-yellow-400" />} value="igor.ivanov.89@gmail.com" />
+            <Info icon={<Linkedin size={16} className="text-yellow-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">linkedin.com/in/chesterok</a>} />
+          </Section>
+
+          <Section title="МЕТА">
             <p className="text-sm text-gray-300">
               Шукаю можливість долучитися до команди, що працює над
               технологічними або інженерними рішеннями, важливими для країни.
@@ -28,37 +35,27 @@ export default function App() {
               Збройним Силам України.
             </p>
           </Section>
-
-          <Section title="ОСОБИСТІ ДАНІ">
-            <Info icon={<MapPin size={16} className="text-yellow-400" />} value="Київ, Україна" />
-            <Info icon={<Phone size={16} className="text-yellow-400" />} value="+38 (093) 168 20 38" />
-            <Info icon={<Mail size={16} className="text-yellow-400" />} value="igor.ivanov.89@gmail.com" />
-            <Info icon={<Linkedin size={16} className="text-yellow-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">linkedin.com/in/chesterok</a>} />
-          </Section>
           
           <Section title="ПРОФЕСІЙНІ НАВИЧКИ">
             <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
-              <li>Публікація застосунків (App Store, Google Play, Amazon, Microsoft Store)</li>
-              <li>Firebase Remote Config та A/B тестування</li>
-              <li>Планування LiveOps та налаштування розпродажів</li>
-              <li>Ігрова аналітика (Firebase, AppsFlyer, GameAnalytics, devtodev)</li>
-              <li>Робота з AppLovin MAX, Google AdMob</li>
-              <li>Asana (борди, автоматизації, командна координація)</li>
-              <li>Контент-менеджмент (Photoshop, підготовка, конвертація, CDN)</li>
-              <li>Тестування (кросплатформене, чек-листи, баг-репорти)</li>
-              <li>Аналіз конкурентів та UI/UX-дослідження</li>
+              <li>Project & Workflow Management</li>
+              <li>LiveOps & Feature Management</li>
+              <li>App Delivery & Release Management</li>
+              <li>Product Analytics & Monetization</li>
+              <li>QA & Testing</li>
+              <li>Content & Tools Operations</li>
+              <li>UX Research & Competitor Analysis</li>
             </ul>
           </Section>
 
            <Section title="ОСОБИСТІ ЯКОСТІ">
             <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
-              <li>Управління проєктами та задачами</li>
-              <li>Кросфункціональна комунікація</li>
-              <li>Увага до деталей</li>
-              <li>Оптимізація процесів та автоматизація</li>
-              <li>Аналітичне мислення</li>
               <li>Самоорганізація та мультизадачність</li>
               <li>Гнучкість в умовах швидких змін</li>
+              <li>Увага до деталей</li>
+              <li>Кросфункціональна комунікація</li>
+              <li>Аналітичне мислення</li>
+              <li>Оптимізація процесів та автоматизація</li>
             </ul>
           </Section>
 
@@ -83,10 +80,6 @@ export default function App() {
         {/* Right Panel */}
         <section className="md:col-span-2 space-y-10">
 
-          
-          
-          
-          
           <Section title="ДОСВІД РОБОТИ">
             <ListItem title="Project Manager" 
               subtitle="Playcus, м. Київ" 
