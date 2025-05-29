@@ -52,7 +52,7 @@ export default function App() {
             <Section title={t('personal_data_title')}>
               <Info icon={<MapPin size={16} className="text-gray-400" />} value={t('location')} />
               <Info icon={<Phone size={16} className="text-gray-400" />} value={t('phone')} />
-              <Info icon={<Mail size={16} className="text-gray-400" />} value={t('email')} />
+              <Info icon={<Mail size={16} className="text-gray-400" />} value={<a href={`mailto:${t('email')}`} className="underline break-all">{t('email')}</a>} />
               <Info icon={<Linkedin size={16} className="text-gray-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">{t('linkedin_url')}</a>} />
             </Section>
             <Section title={t('objective_title')}>
