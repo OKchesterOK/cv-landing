@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Phone, Mail, Linkedin, Star } from 'lucide-react';
+import { MapPin, Phone, Mail, Linkedin } from 'lucide-react';
 
 export default function App() {
   return (
@@ -24,7 +24,7 @@ export default function App() {
             <Info icon={<Linkedin size={16} className="text-yellow-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">linkedin.com/in/chesterok</a>} />
           </Section>
 
-          <Section title="МЕТА" icon={<Star size={18} />} >
+          <Section title="МЕТА">
             <p className="text-sm text-gray-300">
               Шукаю можливість долучитися до команди, що працює над
               технологічними або інженерними рішеннями, важливими для країни.
@@ -217,26 +217,12 @@ export default function App() {
   );
 }
 
-// function Section({ title, children, noLine = false }) {
-//   return (
-//     <div className="mb-6">
-//       <h2
-//         className={`text-xl font-semibold text-yellow-300 mb-2 ${noLine ? '' : 'border-b border-yellow-800 pb-1'}`}
-//       >
-//         {title}
-//       </h2>
-//       {children}
-//     </div>
-//   );
-// }
-
-function Section({ title, children, noLine = false, icon = null }) {
+function Section({ title, children, noLine = false }) {
   return (
     <div className="mb-6">
       <h2
-        className={`text-xl font-semibold text-yellow-300 mb-2 flex items-center gap-2 ${noLine ? '' : 'border-b border-yellow-800 pb-1'}`}
+        className={`text-xl font-semibold text-yellow-300 mb-2 ${noLine ? '' : 'border-b border-yellow-800 pb-1'}`}
       >
-        {icon && <span className="text-yellow-400">{icon}</span>}
         {title}
       </h2>
       {children}
