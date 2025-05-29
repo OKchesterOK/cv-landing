@@ -9,8 +9,9 @@ export default function App() {
         <aside className="bg-[#0f1a2f] p-6 rounded-xl shadow-md">
           <Section noLine>
             <div className="text-left mb-6">
-              <h1 className="text-4xl font-bold text-yellow-400">ІВАНОВ</h1>
-              <p className="text-2xl text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
+              <h1 className="text-3xl font-bold text-yellow-400">ІВАНОВ</h1>
+              <p className="text-xl text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
+              <p className="text-lg italic text-gray-400 tracking-widest">Project Manager</p>
             </div>
           </Section>
           
