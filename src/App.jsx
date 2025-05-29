@@ -7,7 +7,7 @@ export default function App() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Panel */}
         <aside className="bg-[#0f1a2f] p-6 rounded-xl shadow-md">
-          <Section>
+          <Section noLine>
             <div className="text-left mb-6">
               <h1 className="text-3xl font-bold text-yellow-400">ІВАНОВ</h1>
               <p className="text-xl text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
