@@ -1,3 +1,45 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@media print {
+  /* Скрываем элементы, которые не нужны в печати */
+  .fixed.top-6.right-6 { /* Это ваша плавающая панель с кнопками */
+    display: none !important;
+  }
+
+  /* Для главной секции с резюме */
+  .max-w-5xl.mx-auto.grid.grid-cols-1.md\\:grid-cols-3 {
+    /* Принудительно устанавливаем grid-макет для печати */
+    display: grid !important;
+    grid-template-columns: 1fr 2fr !important; /* Или 1fr 2fr, если хотите сохранить пропорции 1:2 */
+    gap: 20px !important; /* Установите желаемый отступ между колонками */
+    max-width: none !important; /* Снимаем ограничение ширины, чтобы использовать всю страницу */
+  }
+
+  /* aside.bg-primary,
+  section.md\:col-span-2 {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding: 0 !important;
+  } */
+
+  /* body, p, h1, h2, h3, h4, h5, h6, span, li, a {
+    color: #000000 !important;
+  }
+
+  svg {
+    color: #000000 !important;
+  } */
+
+  /* .mb-6 { 
+    page-break-inside: avoid;
+  } */
+
+  /* img {
+    max-width: 100% !important;
+    height: auto !important;
+  } */
+}

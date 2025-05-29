@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Linkedin, Download, Globe } from 'lucide-react';
-import { useTranslation } from 'react-i18next'; // Import useTranslation
+import { useTranslation } from 'react-i18next';
 
 export default function App() {
   const { t, i18n } = useTranslation();
