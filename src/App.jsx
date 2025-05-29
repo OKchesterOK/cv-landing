@@ -3,15 +3,15 @@ import { MapPin, Phone, Mail, Linkedin } from 'lucide-react';
 
 export default function App() {
   return (
-    <main className="min-h-screen bg-[#0f172a] text-gray-200 px-4 py-10 font-sans">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    <main className="min-h-screen bg-[#0f172a] text-mainText font-sans">
+      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3">
         {/* Left Panel */}
-        <aside className="bg-[#0b0f1a] p-6 rounded-xl shadow-md">
+        <aside className="bg-primary p-6 shadow-md border-r border-[#1f2937]">
           <Section noLine>
             <div className="text-center mb-6">
               <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-full w-40 h-40 object-cover mx-auto mb-4 border-2 border-gray-400 shadow-md" />
-              <h1 className="text-3xl font-bold text-yellow-400 tracking-widest uppercase">ІВАНОВ</h1>
-              <p className="text-xl text-gray-200 tracking-widest uppercase">ІГОР АНДРІЙОВИЧ</p>
+              <h1 className="text-3xl font-bold text-accent tracking-widest uppercase">ІВАНОВ</h1>
+              <p className="text-xl text-mainText tracking-widest uppercase">ІГОР АНДРІЙОВИЧ</p>
               <p className="text-lg italic text-gray-400 tracking-widest">Project Manager</p>
             </div>
           </Section>
@@ -24,7 +24,7 @@ export default function App() {
           </Section>
 
           <Section title="МЕТА">
-            <p className="text-sm text-gray-200">
+            <p className="text-sm text-mainText">
               Шукаю можливість долучитися до команди, що працює над
               технологічними або інженерними рішеннями, важливими для країни.
               Прагну застосувати свій наявний досвід в управлінні проєктами, технічній
@@ -37,7 +37,7 @@ export default function App() {
           </Section>
 
           <Section title="ПРОФЕСІЙНІ НАВИЧКИ">
-            <ul className="list-disc pl-6 text-sm text-gray-200 space-y-1">
+            <ul className="list-disc pl-6 text-sm text-mainText space-y-1">
               <li>Project & Workflow Management</li>
               <li>LiveOps & Feature Management</li>
               <li>App Delivery & Release Management</li>
@@ -49,7 +49,7 @@ export default function App() {
           </Section>
 
           <Section title="ОСОБИСТІ ЯКОСТІ">
-            <ul className="list-disc pl-6 text-sm text-gray-200 space-y-1">
+            <ul className="list-disc pl-6 text-sm text-mainText space-y-1">
               <li>Самоорганізація та мультизадачність</li>
               <li>Гнучкість в умовах швидких змін</li>
               <li>Увага до деталей</li>
@@ -60,7 +60,7 @@ export default function App() {
           </Section>
 
           <Section title="ІНТЕРЕСИ">
-            <ul className="list-disc pl-6 text-sm text-gray-200 space-y-1">
+            <ul className="list-disc pl-6 text-sm text-mainText space-y-1">
               <li>Розумний будинок</li>
               <li>3D друк</li>
               <li>Авіація</li>
@@ -78,7 +78,7 @@ export default function App() {
         </aside>
 
         {/* Right Panel */}
-        <section className="md:col-span-2 space-y-10">
+        <section className="md:col-span-2 space-y-10 bg-primary p-6 shadow-md">
           <Section title="ДОСВІД РОБОТИ">
             <ListItem title="Project Manager" subtitle="Playcus, м. Київ" date="сер 2021 – теперішній час" bullets={[
               'Ведення 11+ мобільних ігрових проєктів на платформах: App Store, Google Play, Amazon, Microsoft Store',
@@ -132,7 +132,7 @@ export default function App() {
           </Section>
 
           <Section title="АВІАЦІЙНИЙ ДОСВІД">
-            <p className="text-sm text-gray-400 mb-4">
+            <p className="text-sm italic text-gray-400 mb-4">
               Загальний досвід навчання та виконання польотів на малих повітряних суднах, включаючи нічні вильоти та польоти за приладами.
             </p>
             <ListItem title="Ліцензії" bullets={[
@@ -140,9 +140,9 @@ export default function App() {
               'Свідоцтво приватного пілота (PPL)'
             ]} />
             <ListItem title="Наліт годин">
-              <div className="text-sm text-gray-200">
+              <div className="text-sm text-mainText">
                 <div className="flex gap-6">
-                  <ul className="list-disc pl-6 text-sm text-gray-200 space-y-1">
+                  <ul className="list-disc pl-6 text-sm text-mainText space-y-1">
                     <li>Загальний час:</li>
                     <li>Багатодвигунний:</li>
                     <li>Однодвигунний:</li>
@@ -169,8 +169,8 @@ export default function App() {
 function Section({ title, children, noLine = false, icon = null }) {
   return (
     <div className="mb-6">
-      <h2 className={`text-xl font-semibold text-yellow-400 mb-2 flex items-center gap-2 ${noLine ? '' : 'border-b border-[#1f2937] pb-1'}`}>
-        {icon && <span className="text-yellow-300">{icon}</span>}
+      <h2 className={`text-xl font-semibold text-accent mb-2 flex items-center gap-2 ${noLine ? '' : 'border-b border-[#1f2937] pb-1'}`}>
+        {icon && <span className="text-accent">{icon}</span>}
         {title}
       </h2>
       {children}
@@ -182,14 +182,14 @@ function Info({ icon, value }) {
   return (
     <div className="flex items-start gap-3 mb-2">
       <div className="pt-0.5">{icon}</div>
-      <p className="text-sm text-gray-200 leading-snug">{value}</p>
+      <p className="text-sm text-mainText leading-snug">{value}</p>
     </div>
   );
 }
 
 function Skill({ label, level }) {
   return (
-    <div className="flex justify-between text-sm text-gray-200 mb-1">
+    <div className="flex justify-between text-sm text-mainText mb-1">
       <span>{label}</span>
       <span>{level}</span>
     </div>
@@ -199,20 +199,25 @@ function Skill({ label, level }) {
 function ListItem({ title, subtitle, date, bullets, children }) {
   return (
     <div className="mb-5">
-      <div className="flex justify-between items-start gap-4">
-        <p className="text-md text-gray-200 font-semibold">{title}</p>
-        {date && (
-          <p className="text-sm italic text-gray-400 whitespace-nowrap">{date}</p>
-        )}
-      </div>
-      {subtitle && (
-        <p className="text-sm italic text-gray-400 mb-1">{subtitle}</p>
+      <p className="text-md text-mainText font-semibold">{title}</p>
+
+      {(subtitle || date) && (
+        <div className="flex justify-between items-start gap-4">
+          {subtitle && (
+            <p className="text-sm italic text-gray-400 mb-1">{subtitle}</p>
+          )}
+          {date && (
+            <p className="text-sm italic text-gray-400 whitespace-nowrap">{date}</p>
+          )}
+        </div>
       )}
+
       {bullets?.length > 0 && (
-        <ul className="list-disc pl-6 text-sm text-gray-200 space-y-1">
+        <ul className="list-disc pl-6 text-sm text-mainText space-y-1">
           {bullets.map((b, i) => <li key={i}>{b}</li>)}
         </ul>
       )}
+
       {children}
     </div>
   );
