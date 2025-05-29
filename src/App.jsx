@@ -73,8 +73,8 @@ export default function App() {
           </Section>
 
           <Section title="МОВИ">
-            <Skill label="Українська" level={5} />
-            <Skill label="Англійська" level={3} />
+            <Skill label="Українська" level="Рідна мова" />
+            <Skill label="Англійська" level="Pre-Intermediate" />
           </Section>
         </aside>
 
@@ -274,11 +274,9 @@ function Info({ icon, value }) {
 
 function Skill({ label, level }) {
   return (
-    <div className="mb-1">
-      <p className="text-sm text-gray-300 mb-0.5">{label}</p>
-      <div className="h-1 bg-gray-700 rounded-full">
-        <div className={`h-1 bg-yellow-400 rounded-full`} style={{ width: `${level * 20}%` }}></div>
-      </div>
+    <div className="flex justify-between text-sm text-gray-300 mb-1">
+      <span>{label}</span>
+      <span>{level}</span>
     </div>
   );
 }
