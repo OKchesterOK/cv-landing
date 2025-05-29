@@ -15,6 +15,7 @@ export default function App() {
               <p className="text-lg italic text-gray-400 tracking-widest">Project Manager</p>
             </div>
           </Section>
+          
           <Section title="ОСОБИСТІ ДАНІ">
             <Info icon={<MapPin size={16} className="text-gray-400" />} value="Київ, Україна" />
             <Info icon={<Phone size={16} className="text-gray-400" />} value="+38 (093) 168 20 38" />
