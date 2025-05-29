@@ -15,7 +15,7 @@ export default function App() {
             </div>
           </Section>
           
-          <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-lg w-full object-cover mb-6" />
+          <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-full w-40 h-40 object-cover mx-auto mb-6 border-4 border-white shadow-md" />
 
           <Section title="ОСОБИСТІ ДАНІ">
             <Info icon={<MapPin size={16} className="text-yellow-400" />} value="Київ, Україна" />
