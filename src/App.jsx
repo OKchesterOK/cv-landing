@@ -16,7 +16,7 @@ export default function App() {
           
           <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-lg w-full object-cover mb-6" />
 
-          <Section title="МЕТА">
+          <Section>
             <p className="text-sm text-gray-300">
               Шукаю можливість долучитися до команди, що працює над
               технологічними або інженерними рішеннями, важливими для країни.
