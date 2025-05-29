@@ -1,23 +1,37 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Linkedin, Download, Globe } from 'lucide-react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 export default function App() {
+  const { t, i18n } = useTranslation();
+
+  const toggleLanguage = () => {
+    const newLang = i18n.language === 'ua' ? 'en' : 'ua';
+    i18n.changeLanguage(newLang);
+  };
+
+  const nextLang = i18n.language === 'ua' ? 'en' : 'ua';
+  const buttonTitle = i18n.language === 'ua' ? t('switch_to_english') : t('switch_to_ukrainian');
+
+  const currentPdfPath = i18n.language === 'ua' ? '/Ivanov_CV_UA.pdf' : '/Ivanov_CV_EN.pdf';
+  const downloadFileName = i18n.language === 'ua' ? 'Ivanov_CV_UA.pdf' : 'Ivanov_CV_EN.pdf';
+
   return (
     <>
       {/* Floating Action Panel */}
       <div className="fixed top-6 right-6 z-50 flex flex-col space-y-2">
-        <a
-          href="/en"
+        <button 
+          onClick={toggleLanguage} 
           className="bg-primary hover:bg-gray-700 text-white p-3 rounded shadow flex justify-center items-center border-2 border-gray-400"
-          title="Switch to English"
+          title={buttonTitle}
         >
           <Globe className="w-5 h-5" />
-        </a>
+        </button>
         <a
-          href="/Ivanov_CV_UA.pdf"
-          download
+          href={currentPdfPath}
+          download={downloadFileName}
           className="bg-accent hover:bg-yellow-500 text-black p-3 rounded shadow flex justify-center items-center"
-          title="Завантажити PDF"
+          title={t('download_pdf')}
         >
           <Download className="w-5 h-5" />
         </a>
@@ -28,151 +42,189 @@ export default function App() {
           <aside className="bg-primary p-6 shadow-md border-r border-[#1f2937]">
             <Section noLine>
               <div className="text-center mb-6">
-                <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-full w-40 h-40 object-cover mx-auto mb-4 border-2 border-gray-400 shadow-md" />
-                <h1 className="text-3xl font-bold text-accent tracking-widest uppercase">ІВАНОВ</h1>
-                <p className="text-xl text-mainText tracking-widest uppercase">ІГОР АНДРІЙОВИЧ</p>
-                <p className="text-lg italic text-gray-400 tracking-widest">Project Manager</p>
+                <img src="/ivanov_photo.png" alt={t('ivanov_name_last')} className="rounded-full w-40 h-40 object-cover mx-auto mb-4 border-2 border-gray-400 shadow-md" />
+                <h1 className="text-3xl font-bold text-accent tracking-widest uppercase">{t('ivanov_name_first')}</h1>
+                <p className="text-xl text-mainText tracking-widest uppercase">{t('ivanov_name_last')}</p>
+                <p className="text-lg italic text-gray-400 tracking-widest">{t('project_manager_title')}</p>
               </div>
             </Section>
             
-            <Section title="ОСОБИСТІ ДАНІ">
-              <Info icon={<MapPin size={16} className="text-gray-400" />} value="Київ, Україна" />
-              <Info icon={<Phone size={16} className="text-gray-400" />} value="+38 (093) 168 20 38" />
-              <Info icon={<Mail size={16} className="text-gray-400" />} value="igor.ivanov.89@gmail.com" />
-              <Info icon={<Linkedin size={16} className="text-gray-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">linkedin.com/in/chesterok</a>} />
+            <Section title={t('personal_data_title')}>
+              <Info icon={<MapPin size={16} className="text-gray-400" />} value={t('location')} />
+              <Info icon={<Phone size={16} className="text-gray-400" />} value={t('phone')} />
+              <Info icon={<Mail size={16} className="text-gray-400" />} value={t('email')} />
+              <Info icon={<Linkedin size={16} className="text-gray-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">{t('linkedin_url')}</a>} />
             </Section>
-            <Section title="МЕТА">
+            <Section title={t('objective_title')}>
               <p className="text-sm text-mainText">
-                Шукаю можливість долучитися до команди, що працює над
-                технологічними або інженерними рішеннями, важливими для країни.
-                Прагну застосувати свій наявний досвід в управлінні проєктами, технічній
-                координації та аналітиці, а також здобуті знання в авіаційній галузі.
-                Готовий розвиватися, швидко навчатись і вкладати зусилля у нові
-                напрями. Відкритий до нових викликів, особливо якщо результат моєї
-                роботи зможе принести реальну користь суспільству або допомогти
-                Збройним Силам України.
+                {t('objective_text')}
               </p>
             </Section>
 
-            <Section title="ПРОФЕСІЙНІ НАВИЧКИ">
+            <Section title={t('professional_skills_title')}>
               <ul className="list-disc pl-6 text-sm text-mainText space-y-1">
-                <li>Project & Workflow Management</li>
-                <li>LiveOps & Feature Management</li>
-                <li>App Delivery & Release Management</li>
-                <li>Product Analytics & Monetization</li>
-                <li>QA & Testing</li>
-                <li>Content & Tools Operations</li>
-                <li>UX Research & Competitor Analysis</li>
+                <li>{t('skill_project_workflow_management')}</li>
+                <li>{t('skill_liveops_feature_management')}</li>
+                <li>{t('skill_app_delivery_release_management')}</li>
+                <li>{t('skill_product_analytics_monetization')}</li>
+                <li>{t('skill_qa_testing')}</li>
+                <li>{t('skill_content_tools_operations')}</li>
+                <li>{t('skill_ux_research_competitor_analysis')}</li>
               </ul>
             </Section>
 
-            <Section title="ОСОБИСТІ ЯКОСТІ">
+            <Section title={t('personal_qualities_title')}>
               <ul className="list-disc pl-6 text-sm text-mainText space-y-1">
-                <li>Самоорганізація та мультизадачність</li>
-                <li>Гнучкість в умовах швидких змін</li>
-                <li>Увага до деталей</li>
-                <li>Кросфункціональна комунікація</li>
-                <li>Аналітичне мислення</li>
-                <li>Оптимізація процесів та автоматизація</li>
+                <li>{t('quality_self_organization_multitasking')}</li>
+                <li>{t('quality_flexibility_rapid_changes')}</li>
+                <li>{t('quality_attention_to_detail')}</li>
+                <li>{t('quality_cross_functional_communication')}</li>
+                <li>{t('quality_analytical_thinking')}</li>
+                <li>{t('quality_process_optimization_automation')}</li>
               </ul>
             </Section>
 
-            <Section title="ІНТЕРЕСИ">
+            <Section title={t('interests_title')}>
               <ul className="list-disc pl-6 text-sm text-mainText space-y-1">
-                <li>Розумний будинок</li>
-                <li>3D друк</li>
-                <li>Авіація</li>
-                <li>Настільний теніс</li>
-                <li>Кінематограф</li>
-                <li>Відеоігри</li>
-                <li>Барна культура</li>
+                <li>{t('interest_smart_home')}</li>
+                <li>{t('interest_3d_printing')}</li>
+                <li>{t('interest_aviation')}</li>
+                <li>{t('interest_table_tennis')}</li>
+                <li>{t('interest_cinema')}</li>
+                <li>{t('interest_video_games')}</li>
+                <li>{t('interest_bar_culture')}</li>
               </ul>
             </Section>
 
-            <Section title="МОВИ">
-              <Skill label="Українська" level="Рідна мова" />
-              <Skill label="Англійська" level="Pre-Intermediate" />
+            <Section title={t('languages_title')}>
+              <Skill label={t('language_ukrainian')} level={t('language_native')} />
+              <Skill label={t('language_english')} level={t('language_pre_intermediate')} />
             </Section>
           </aside>
 
           {/* Right Panel */}
           <section className="md:col-span-2 space-y-10 bg-primary p-6 shadow-md">
-            <Section title="ДОСВІД РОБОТИ">
-              <ListItem title="Project Manager" subtitle="Playcus, м. Київ" date="сер 2021 – теперішній час" bullets={[
-                'Ведення 11+ мобільних ігрових проєктів на платформах: App Store, Google Play, Amazon, Microsoft Store',
-                'Заведення та публікація застосунків: метадані, підписки, IAP, тощо',
-                'Налаштування LiveOps: Firebase Remote Config, A/B тести, промо',
-                'Управління контентом: пошук, обробка, заливка на CDN, перевірка в грі',
-                'Робота з аналітикою: Firebase, AppsFlyer, AppLovin, GameAnalytics, devtodev (воронки, події, креші)',
-                'Ведення бордів Asana: планування релізів, автоматизації, контроль задач команди',
-                'Аналіз конкурентів: UI/UX-ресерч, адаптація фіч у Miro'
-              ]} />
+            <Section title={t('work_experience_title')}>
+              <ListItem 
+                title={t('experience_pm_title')} 
+                subtitle={t('experience_pm_company')} 
+                date={t('experience_pm_date')} 
+                bullets={[
+                  t('experience_pm_bullet1'),
+                  t('experience_pm_bullet2'),
+                  t('experience_pm_bullet3'),
+                  t('experience_pm_bullet4'),
+                  t('experience_pm_bullet5'),
+                  t('experience_pm_bullet6'),
+                  t('experience_pm_bullet7')
+                ]} 
+              />
 
-              <ListItem title="Manual QA Engineer" subtitle="Playcus, м. Київ" date="тра 2019 – сер 2021" bullets={[
-                'Тестування мобільних ігор на iOS, Android, Windows, Amazon, macOS',
-                'Створення тест-кейсів, чек-листів, репортинг, перевірка фіч',
-                'Підтримка гравців (HelpScout), перевірка звернень',
-                'Участь у прийманні контенту, A/B тестів, реліз-кандидатів'
-              ]} />
+              <ListItem 
+                title={t('experience_qa_title')} 
+                subtitle={t('experience_qa_company')} 
+                date={t('experience_qa_date')} 
+                bullets={[
+                  t('experience_qa_bullet1'),
+                  t('experience_qa_bullet2'),
+                  t('experience_qa_bullet3'),
+                  t('experience_qa_bullet4')
+                ]} 
+              />
 
-              <ListItem title="Junior Front-End Developer" subtitle="Edgica, м. Київ" date="тра 2017 – жов 2017" bullets={[
-                'Участь у верстці вебсторінок за макетами (HTML5, CSS3, адаптивна розмітка)',
-                'Базова інтеграція JavaScript-скриптів, робота з формами та простою логікою',
-                'Тестування кросбраузерної сумісності, оптимізація для мобільних пристроїв',
-                'Робота в команді з дизайнером та бекенд-розробником'
-              ]} />
+              <ListItem 
+                title={t('experience_frontend_title')} 
+                subtitle={t('experience_frontend_company')} 
+                date={t('experience_frontend_date')} 
+                bullets={[
+                  t('experience_frontend_bullet1'),
+                  t('experience_frontend_bullet2'),
+                  t('experience_frontend_bullet3'),
+                  t('experience_frontend_bullet4')
+                ]} 
+              />
 
-              <ListItem title="Бар-менеджер / Бармен (фриланс)" subtitle="м. Київ" date="2014 – теперішній час (епізодично)" bullets={[]} />
+              <ListItem 
+                title={t('experience_bar_manager_title')} 
+                subtitle={t('experience_bar_manager_company')} 
+                date={t('experience_bar_manager_date')} 
+                bullets={[]} 
+              />
             </Section>
 
-            <Section title="ОСВІТА І КВАЛІФІКАЦІЇ">
-              <ListItem title="Магістр з льотної експлуатації повітряних суден" subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький" date="вер 2013 — чер 2014" bullets={[
-                'Спеціальність: Льотна експлуатація повітряних суден',
-                'Професійна кваліфікація: Пілот (літака)'
-              ]} />
+            <Section title={t('education_qualifications_title')}>
+              <ListItem 
+                title={t('education_master_pilot_title')} 
+                subtitle={t('education_master_pilot_university')} 
+                date={t('education_master_pilot_date')} 
+                bullets={[
+                  t('education_master_pilot_bullet1'),
+                  t('education_master_pilot_bullet2')
+                ]} 
+              />
 
-              <ListItem title="Молодший лейтенант" subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький" date="вер 2011 — чер 2013" bullets={[
-                'Спеціальність: Пілот військово-транспортної авіації',
-                'ВОС 061400: Бойове застосування авіаційних військових частин і підрозділів військово-транспортної авіації'
-              ]} />
+              <ListItem 
+                title={t('education_junior_lieutenant_title')} 
+                subtitle={t('education_junior_lieutenant_university')} 
+                date={t('education_junior_lieutenant_date')} 
+                bullets={[
+                  t('education_junior_lieutenant_bullet1'),
+                  t('education_junior_lieutenant_bullet2')
+                ]} 
+              />
 
-              <ListItem title="Бакалавр з аеронавігації" subtitle="Кіровоградська Льотна Академія НАУ, м. Кропивницький" date="вер 2010 — чер 2013" bullets={[
-                'Спеціальність: Аеронавігація'
-              ]} />
+              <ListItem 
+                title={t('education_bachelor_aeron_title')} 
+                subtitle={t('education_bachelor_aeron_university')} 
+                date={t('education_bachelor_aeron_date')} 
+                bullets={[
+                  t('education_bachelor_aeron_bullet1')
+                ]} 
+              />
 
-              <ListItem title="Бакалавр з електроніки" subtitle="Національний авіаційний університет, м. Київ" date="вер 2006 — чер 2010" bullets={[
-                'Спеціальність: Обладнання повітряних суден (без диплому)'
-              ]} />
+              <ListItem 
+                title={t('education_bachelor_electronics_title')} 
+                subtitle={t('education_bachelor_electronics_university')} 
+                date={t('education_bachelor_electronics_date')} 
+                bullets={[
+                  t('education_bachelor_electronics_bullet1')
+                ]} 
+              />
 
-              <ListItem title="Повна середня освіта" subtitle="Ліцей «Універсум», м. Київ" date="вер 2002 — чер 2006" bullets={[
-                'Профіль: фізико-математичний'
-              ]} />
+              <ListItem 
+                title={t('education_high_school_title')} 
+                subtitle={t('education_high_school_university')} 
+                date={t('education_high_school_date')} 
+                bullets={[
+                  t('education_high_school_bullet1')
+                ]} 
+              />
             </Section>
 
-            <Section title="АВІАЦІЙНИЙ ДОСВІД">
+            <Section title={t('aviation_experience_title')}>
               <p className="text-sm italic text-gray-400 mb-4">
-                Загальний досвід навчання та виконання польотів на малих повітряних суднах, включаючи нічні вильоти та польоти за приладами.
+                {t('aviation_experience_description')}
               </p>
-              <ListItem title="Ліцензії" bullets={[
-                'Свідоцтво комерційного пілота (CPL)',
-                'Свідоцтво приватного пілота (PPL)'
+              <ListItem title={t('aviation_licenses_title')} bullets={[
+                t('aviation_license_cpl'),
+                t('aviation_license_ppl')
               ]} />
-              <ListItem title="Наліт годин">
+              <ListItem title={t('flight_hours_title')}>
                 <div className="text-sm text-mainText">
                   <div className="flex gap-6">
                     <ul className="list-disc pl-6 text-sm text-mainText space-y-1">
-                      <li>Загальний час:</li>
-                      <li>Багатодвигунний:</li>
-                      <li>Однодвигунний:</li>
-                      <li>В якості КПС:</li>
-                      <li>Тренажер:</li>
+                      <li>{t('flight_hours_total')}</li>
+                      <li>{t('flight_hours_multi_engine')}</li>
+                      <li>{t('flight_hours_single_engine')}</li>
+                      <li>{t('flight_hours_pic')}</li>
+                      <li>{t('flight_hours_simulator')}</li>
                     </ul>
                     <ul className="space-y-1">
-                      <li>160 год 51 хв</li>
-                      <li>50 год 18 хв</li>
-                      <li>107 год 33 хв</li>
-                      <li>144 год 51 хв</li>
-                      <li>55 год 00 хв</li>
+                      <li>{t('flight_hours_total_value')}</li>
+                      <li>{t('flight_hours_multi_engine_value')}</li>
+                      <li>{t('flight_hours_single_engine_value')}</li>
+                      <li>{t('flight_hours_pic_value')}</li>
+                      <li>{t('flight_hours_simulator_value')}</li>
                     </ul>
                   </div>
                 </div>
