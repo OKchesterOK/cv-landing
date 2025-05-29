@@ -6,7 +6,7 @@ export default function App() {
     <main className="min-h-screen bg-[#0c1220] text-white px-4 py-10 font-sans">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Panel */}
-        <aside className="bg-gradient-to-b from-blue-900 via-blue-100 to-white text-black p-6 rounded-xl shadow-md">
+        <aside className="bg-gradient-to-b from-[#0f1a2f] via-[#1a2945] to-white text-white p-6 rounded-xl shadow-md">
           <Section noLine>
             <div className="text-left mb-6">
               <h1 className="text-3xl font-bold text-yellow-400">ІВАНОВ</h1>
