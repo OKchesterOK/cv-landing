@@ -7,6 +7,13 @@ export default function App() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Left Panel */}
         <aside className="bg-[#0f1a2f] p-6 rounded-xl shadow-md">
+          <Section noLine>
+            <div className="text-left mb-6">
+              <h1 className="text-4xl font-bold text-yellow-400">ІВАНОВ</h1>
+              <p className="text-2xl text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
+            </div>
+          </Section>
+          
           <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-lg w-full object-cover mb-6" />
 
           <Section title="ОСОБИСТІ ДАНІ">
@@ -35,12 +42,7 @@ export default function App() {
         {/* Right Panel */}
         <section className="md:col-span-2 space-y-10">
 
-          <Section noLine>
-            <div className="text-left mb-6">
-              <h1 className="text-4xl font-bold text-yellow-400">ІВАНОВ</h1>
-              <p className="text-2xl text-gray-300 tracking-widest">ІГОР АНДРІЙОВИЧ</p>
-            </div>
-          </Section>
+          
           
           <Section title="МЕТА">
             <p className="text-sm text-gray-300">
