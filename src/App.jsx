@@ -36,7 +36,19 @@ export default function App() {
             <Info icon={<Linkedin size={16} className="text-yellow-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">linkedin.com/in/chesterok</a>} />
           </Section>
           
-          <Section title="НАВИЧКИ">
+          <Section title="Професійні навички">
+            <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
+              <li>Публікація застосунків (App Store, Google Play, Amazon, Microsoft Store)</li>
+              <li>Firebase Remote Config та A/B тестування</li>
+              <li>Asana (борди, автоматизації, командна координація)</li>
+              <li>Планування LiveOps та налаштування розпрода</li>
+              <li>Робота з AppLovin MAX, Google AdMob</li>
+              <li>Самоорганізація та мультизадачність</li>
+              <li>Гнучкість в умовах швидких змін</li>
+            </ul>
+          </Section>
+
+           <Section title="Особисті якості">
             <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
               <li>Управління проєктами та задачами</li>
               <li>Кросфункціональна комунікація</li>
@@ -46,13 +58,18 @@ export default function App() {
               <li>Самоорганізація та мультизадачність</li>
               <li>Гнучкість в умовах швидких змін</li>
             </ul>
-{/*             <Skill label="Управління проєктами та задачами" />
-            <Skill label="Кросфункціональна комунікація" />
-            <Skill label="Увага до деталей" level={4} />
-            <Skill label="Оптимізація процесів та автоматизація" />
-            <Skill label="Аналітичне мислення" />
-            <Skill label="Самоорганізація та мультизадачність" />
-            <Skill label="Гнучкість в умовах швидких змін" /> */}
+          </Section>
+
+          <Section title="Хобі та інтереси">
+            <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
+              <li>Розумний будинок</li>
+              <li>3D друк</li>
+              <li>Авіація</li>
+              <li>Настільний теніс</li>
+              <li>Кінематограф</li>
+              <li>Відеоігри</li>
+              <li>Барна культура</li>
+            </ul>
           </Section>
 
           <Section title="МОВИ">
