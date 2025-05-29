@@ -36,19 +36,21 @@ export default function App() {
             <Info icon={<Linkedin size={16} className="text-yellow-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">linkedin.com/in/chesterok</a>} />
           </Section>
           
-          <Section title="Професійні навички">
+          <Section title="ПРОФЕСІЙНІ НАВИЧКИ">
             <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
               <li>Публікація застосунків (App Store, Google Play, Amazon, Microsoft Store)</li>
               <li>Firebase Remote Config та A/B тестування</li>
-              <li>Asana (борди, автоматизації, командна координація)</li>
-              <li>Планування LiveOps та налаштування розпрода</li>
+              <li>Планування LiveOps та налаштування розпродажів</li>
+              <li>Ігрова аналітика (Firebase, AppsFlyer, GameAnalytics, devtodev)</li>
               <li>Робота з AppLovin MAX, Google AdMob</li>
-              <li>Самоорганізація та мультизадачність</li>
-              <li>Гнучкість в умовах швидких змін</li>
+              <li>Asana (борди, автоматизації, командна координація)</li>
+              <li>Контент-менеджмент (Photoshop, підготовка, конвертація, CDN)</li>
+              <li>Тестування (кросплатформене, чек-листи, баг-репорти)</li>
+              <li>Аналіз конкурентів та UI/UX-дослідження</li>
             </ul>
           </Section>
 
-           <Section title="Особисті якості">
+           <Section title="ОСОБИСТІ ЯКОСТІ">
             <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
               <li>Управління проєктами та задачами</li>
               <li>Кросфункціональна комунікація</li>
@@ -60,7 +62,7 @@ export default function App() {
             </ul>
           </Section>
 
-          <Section title="Хобі та інтереси">
+          <Section title="ІНТЕРЕСИ">
             <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
               <li>Розумний будинок</li>
               <li>3D друк</li>
