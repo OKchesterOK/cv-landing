@@ -9,7 +9,7 @@ export default function App() {
         <aside className="bg-[#0b0f1a] p-6 rounded-xl shadow-md">
           <Section noLine>
             <div className="text-center mb-6">
-              <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-full w-45 h-45 object-cover mx-auto mb-4 border-1 border-gray-200 shadow-md" />
+              <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-full w-40 h-40 object-cover mx-auto mb-4 border-4 border-gray-200 shadow-md" />
               <h1 className="text-3xl font-bold text-yellow-400 tracking-widest uppercase">ІВАНОВ</h1>
               <p className="text-xl text-gray-200 tracking-widest uppercase">ІГОР АНДРІЙОВИЧ</p>
               <p className="text-lg italic text-gray-400 tracking-widest">Project Manager</p>
