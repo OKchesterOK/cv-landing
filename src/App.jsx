@@ -9,7 +9,7 @@ export default function App() {
         <aside className="bg-[#0b0f1a] p-6 rounded-xl shadow-md">
           <Section noLine>
             <div className="text-center mb-6">
-              <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-full w-40 h-40 object-cover mx-auto mb-4 border-4 border-gray-400 shadow-md" />
+              <img src="/ivanov_photo.png" alt="Ігор Іванов" className="rounded-full w-40 h-40 object-cover mx-auto mb-4 border-3 border-gray-400 shadow-md" />
               <h1 className="text-3xl font-bold text-yellow-400 tracking-widest uppercase">ІВАНОВ</h1>
               <p className="text-xl text-gray-200 tracking-widest uppercase">ІГОР АНДРІЙОВИЧ</p>
               <p className="text-lg italic text-gray-400 tracking-widest">Project Manager</p>
@@ -18,6 +18,7 @@ export default function App() {
 
           <Section title="ОСОБИСТІ ДАНІ">
             <Info icon={<MapPin size={16} className="text-gray-400" />} value="Київ, Україна" />
+            <Info icon={<MapPin size={16} className="text-yellow-300" />} value="Київ, Україна" />
             <Info icon={<Phone size={16} className="text-gray-400" />} value="+38 (093) 168 20 38" />
             <Info icon={<Mail size={16} className="text-gray-400" />} value="igor.ivanov.89@gmail.com" />
             <Info icon={<Linkedin size={16} className="text-gray-400" />} value={<a href="https://www.linkedin.com/in/chesterok" target="_blank" rel="noopener noreferrer" className="underline">linkedin.com/in/chesterok</a>} />
