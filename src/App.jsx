@@ -199,7 +199,7 @@ export default function App() {
               </ul>
             </ListItem> */}
 
-            <ListItem title="Наліт та типи ПС">
+{/*             <ListItem title="Наліт та типи ПС">
               <span className="text-sm italic text-gray-400 mb-1">
                   Льотна підготовка, загальний наліт <span className="font-semibold">160 год 35 хв</span>
               </span>
@@ -231,6 +231,27 @@ export default function App() {
                   <ul className="space-y-1">
                     <li>25 год 00 хв</li>
                     <li>30 год 00 хв</li>
+                  </ul>
+                </div>
+              </div>
+            </ListItem> */}
+
+            <ListItem title="Наліт годин">
+              <div className="text-sm text-gray-300">
+                <div className="flex gap-6">
+                  <ul className="list-disc pl-6 text-sm text-gray-300 space-y-1">
+                    <li>Загальний час:</li>
+                    <li>Багатодвигунний:</li>
+                    <li>Однодвигунний:</li>
+                    <li>В якості КПС:</li>
+                    <li>Тренажер:</li>
+                  </ul>
+                  <ul className="space-y-1">
+                    <li>160 год 51 хв</li>
+                    <li>50 год 18 хв</li>
+                    <li>107 год 33 хв</li>
+                    <li>144 год 51 хв</li>
+                    <li>55 год 00 хв</li>
                   </ul>
                 </div>
               </div>
