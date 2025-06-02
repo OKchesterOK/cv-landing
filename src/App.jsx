@@ -87,6 +87,7 @@ export default function App() {
             <Section title={t('interests_title')}>
               <ul className="list-disc pl-6 text-sm text-mainText space-y-1">
                 <li>{t('interest_smart_home')}</li>
+                <li>{t('interest_diy')}</li>
                 <li>{t('interest_3d_printing')}</li>
                 <li>{t('interest_aviation')}</li>
                 <li>{t('interest_table_tennis')}</li>
