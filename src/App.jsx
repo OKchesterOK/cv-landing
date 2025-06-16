@@ -45,7 +45,7 @@ export default function App() {
                 <img src="/ivanov_photo.png" alt={t('ivanov_name_last')} className="rounded-full w-40 h-40 object-cover mx-auto mb-4 border-2 border-gray-400 shadow-md" />
                 <h1 className="text-3xl font-bold text-accent tracking-widest uppercase">{t('ivanov_name_first')}</h1>
                 <p className="text-xl text-mainText tracking-widest uppercase">{t('ivanov_name_last')}</p>
-                <p className="text-lg italic text-gray-400 tracking-widest">{t('project_manager_title')}</p>
+                <p className="text-lg italic text-gray-400 tracking-widest">{t('live_ops_title')}</p>
               </div>
             </Section>
             
