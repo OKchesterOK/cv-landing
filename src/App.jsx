@@ -27,14 +27,14 @@ export default function App() {
         >
           <Globe className="w-5 h-5" />
         </button>
-        <a
+{/*         <a
           href={currentPdfPath}
           download={downloadFileName}
           className="bg-accent hover:bg-yellow-500 text-black p-3 rounded shadow flex justify-center items-center"
           title={t('download_pdf')}
         >
           <Download className="w-5 h-5" />
-        </a>
+        </a> */}
       </div>
       <main className="relative min-h-screen bg-[#0f172a] text-mainText font-sans">
         <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3">
